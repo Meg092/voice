@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:versatile_voice/db_voice/db_voice.dart';
 import 'package:versatile_voice/pages/voice_first/all_voices/all_voices_binding.dart';
 import 'package:versatile_voice/pages/voice_first/all_voices/all_voices_view.dart';
+import 'package:versatile_voice/pages/voice_first/all_voices/voice_tts_config.dart';
 import 'package:versatile_voice/pages/voice_first/voice_first_binding.dart';
 import 'package:versatile_voice/pages/voice_first/voice_first_view.dart';
 import 'package:versatile_voice/pages/voice_fourth/voice_fourth_binding.dart';
@@ -13,6 +14,8 @@ import 'package:versatile_voice/pages/voice_tab/voice_tab_binding.dart';
 import 'package:versatile_voice/pages/voice_tab/voice_tab_view.dart';
 import 'package:versatile_voice/pages/voice_third/voice_third_binding.dart';
 import 'package:versatile_voice/pages/voice_third/voice_third_view.dart';
+import 'package:versatile_voice/pages/voice_trans/voice_trans_binding.dart';
+import 'package:versatile_voice/pages/voice_trans/voice_trans_view.dart';
 
 
 Color primaryColor = const Color(0xff2bd9f8);
@@ -32,7 +35,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       getPages: Voice,
-      initialRoute: '/voice_tab',
+      initialRoute: '/voice',
       theme: ThemeData(
         useMaterial3: true,
         primaryColor: primaryColor,
@@ -74,9 +77,11 @@ class MyApp extends StatelessWidget {
   }
 }
 List<GetPage<dynamic>> Voice = [
+  GetPage(name: '/voice', page: () => VoiceTransView(), binding: VoiceTransBinding()),
   GetPage(name: '/voice_tab', page: () => VoiceTabPage(), binding: VoiceTabBinding()),
   GetPage(name: '/voice_first', page: () => VoiceFirstPage(), binding: VoiceFirstBinding()),
   GetPage(name: '/voice_second', page: () => VoiceSecondPage(), binding: VoiceSecondBinding()),
+  GetPage(name: '/voice_config', page: () => VoiceTtsConfig()),
   GetPage(name: '/voice_third', page: () => VoiceThirdPage(), binding: VoiceThirdBinding()),
   GetPage(name: '/voice_fourth', page: () => VoiceFourthPage(), binding: VoiceFourthBinding()),
   GetPage(name: '/all_voices', page: () => AllVoicesWidget(), binding: AllVoicesBinding()),

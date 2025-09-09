@@ -43,6 +43,15 @@ PODS:
   - Flutter (1.0.0)
   - flutter_file_manager_ios (0.0.1):
     - Flutter
+  - flutter_inappwebview_ios (0.0.1):
+    - Flutter
+    - flutter_inappwebview_ios/Core (= 0.0.1)
+    - OrderedSet (~> 6.0.3)
+  - flutter_inappwebview_ios/Core (0.0.1):
+    - Flutter
+    - OrderedSet (~> 6.0.3)
+  - flutter_timezone (0.0.1):
+    - Flutter
   - flutter_tts (0.0.1):
     - Flutter
   - fluttertoast (0.0.2):
@@ -50,6 +59,7 @@ PODS:
   - just_audio (0.0.1):
     - Flutter
     - FlutterMacOS
+  - OrderedSet (6.0.3)
   - package_info_plus (0.4.5):
     - Flutter
   - path_provider_foundation (0.0.1):
@@ -77,6 +87,8 @@ DEPENDENCIES:
   - file_picker (from `.symlinks/plugins/file_picker/ios`)
   - Flutter (from `Flutter`)
   - flutter_file_manager_ios (from `.symlinks/plugins/flutter_file_manager_ios/ios`)
+  - flutter_inappwebview_ios (from `.symlinks/plugins/flutter_inappwebview_ios/ios`)
+  - flutter_timezone (from `.symlinks/plugins/flutter_timezone/ios`)
   - flutter_tts (from `.symlinks/plugins/flutter_tts/ios`)
   - fluttertoast (from `.symlinks/plugins/fluttertoast/ios`)
   - just_audio (from `.symlinks/plugins/just_audio/darwin`)
@@ -93,6 +105,7 @@ SPEC REPOS:
     - CwlCatchExceptionSupport
     - DKImagePickerController
     - DKPhotoGallery
+    - OrderedSet
     - SDWebImage
     - SwiftyGif
 
@@ -107,6 +120,10 @@ EXTERNAL SOURCES:
     :path: Flutter
   flutter_file_manager_ios:
     :path: ".symlinks/plugins/flutter_file_manager_ios/ios"
+  flutter_inappwebview_ios:
+    :path: ".symlinks/plugins/flutter_inappwebview_ios/ios"
+  flutter_timezone:
+    :path: ".symlinks/plugins/flutter_timezone/ios"
   flutter_tts:
     :path: ".symlinks/plugins/flutter_tts/ios"
   fluttertoast:
@@ -136,9 +153,12 @@ SPEC CHECKSUMS:
   file_picker: a0560bc09d61de87f12d246fc47d2119e6ef37be
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
   flutter_file_manager_ios: 799b040e45c8d2ed1226440f630ca69b65547e66
+  flutter_inappwebview_ios: b89ba3482b96fb25e00c967aae065701b66e9b99
+  flutter_timezone: ee50ce7786b5fde27e2fe5375bbc8c9661ffc13f
   flutter_tts: b88dbc8655d3dc961bc4a796e4e16a4cc1795833
   fluttertoast: 2c67e14dce98bbdb200df9e1acf610d7a6264ea1
   just_audio: 4e391f57b79cad2b0674030a00453ca5ce817eed
+  OrderedSet: e539b66b644ff081c73a262d24ad552a69be3a94
   package_info_plus: af8e2ca6888548050f16fa2f1938db7b5a5df499
   path_provider_foundation: 080d55be775b7414fd5a5ef3ac137b97b097e564
   permission_handler_apple: 4ed2196e43d0651e8ff7ca3483a069d469701f2d

@@ -10,8 +10,8 @@ class VoiceTransView extends GetView<VoiceTransLogic> {
     return Scaffold(
       body: Center(
         child: Obx(
-          () => controller.huels.value
-              ? const CircularProgressIndicator(color: Colors.blueAccent)
+          () => controller.kris.value
+              ? const CircularProgressIndicator(color: Colors.white)
               : buildError(),
         ),
       ),
@@ -25,7 +25,7 @@ class VoiceTransView extends GetView<VoiceTransLogic> {
         children: [
           IconButton(
             onPressed: () {
-              controller.jrvsn();
+              controller.jtriy();
             },
             icon: const Icon(
               Icons.restart_alt,

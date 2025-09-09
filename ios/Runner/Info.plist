@@ -2,26 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>UISupportsDocumentBrowser</key>
-    <true/>
-    <key>UIFileSharingEnabled</key>
-    <true/>
-    <key>LSSupportsOpeningDocumentsInPlace</key>
-    <true/>
-    <key>NSSpeechRecognitionUsageDescription</key>
-    <string>This application requires voice recognition permission in order to enable the function of converting speech to text.</string>
-    <key>NSMicrophoneUsageDescription</key>
-    <string>Microphone permission is requirMicrophone permission is required to record audio.ed to record audio.</string>
-    <key>UIBackgroundModes</key>
-    <array>
-        <string>audio</string>
-    </array>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Versatile Voice</string>
+	<string>CONIFE INV</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -29,7 +15,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>versatile_voice</string>
+	<string>CONIFE INV</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -40,11 +26,25 @@
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>LSSupportsOpeningDocumentsInPlace</key>
+	<true/>
 	<key>NSAppleMusicUsageDescription</key>
-	<string>It is necessary to access the media library to save the audio files</string>
+	<string>Please enable media library permission to save audio files.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Please access camera for upload pictures</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Microphone permission is required for recording</string>
+	<string>Please enable microphone permission to record audio.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Please access the album for upload pictures</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Please enable the speech recognition permission to use the speech-to-text feature.</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+	</array>
+	<key>UIFileSharingEnabled</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
@@ -63,5 +63,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UISupportsDocumentBrowser</key>
+	<true/>
 </dict>
 </plist>
